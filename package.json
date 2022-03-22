@@ -1,0 +1,15 @@
+{
+  "name": "cursocypress",
+  "version": "1.0.0",
+  "description": "Curso de cypress, con ejercio y profundizarlo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:open": "cypress open"
+  },
+  "author": "Guy Sánchez",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.2"
+  }
+}
