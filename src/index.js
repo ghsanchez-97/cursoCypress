@@ -26,3 +26,49 @@ let ape='Sánchez'
 typeof ape
 let ed=24
 typeof ed
+
+//  Declaración de objeto
+let obj1 = { nombre: 'Guy', apellido: 'Sánchez', edad: 24 }
+typeof obj1
+
+// Mostrar el console de un objeto
+let obj2 = { nombre: 'Guy', apellido: 'Sánchez', edad: 24 }
+console.log(`Tu nombre es: ${obj2.nombre} ${obj2.apellido} y tienes ${obj2.edad} años`)
+//  Mostrar suma con objetos
+let datos ={a:10,b:20,c:30}
+let suma=datos.a+datos.b+datos.c
+console.log(`La suma de ${datos.a} + ${datos.b} + ${datos.c} es ${suma}`)
+
+// Declaración de prompt
+let a1 = prompt('Ingresa un numero')
+let b1 = prompt('Ingresa otro numero')
+let suma1 = parseInt(a1) + parseInt(b1)
+alert(`La suma de ${a1} + ${b1} es ${suma1}`)
+
+// Declaración de partseInt y parseFloat
+let a2 = prompt('Ingresa un numero')
+let b2 = prompt('Ingresa otro numero')
+let suma2 = parseFloat(a2) + parseFloat(b2)
+alert(`La suma de ${a2} + ${b2} es ${suma2}`)
+
+//  Declaración de funciones basicas
+function saludar(){
+    alert('Bienvenido a ')
+    alert('El mini curso de JavaScript')
+}
+saludar()
+function pedirA(){
+    let a = prompt('Ingresa un numero')
+    let b = prompt('Ingresa otro numero')
+    let suma = parseInt(a) + parseInt(b)
+    alert(`La suma de ${a} + ${b} es ${suma}`)
+}
+pedirA()
+
+// Declaración de funciones con parametros
+function Suma(a,b){
+    console.log('Entrando a la funcion de suma:')
+    let suma = a + b
+    console.log(`La suma de ${a} + ${b} es ${suma}`)
+}
+Suma(10,20)
