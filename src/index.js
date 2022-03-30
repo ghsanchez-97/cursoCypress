@@ -72,3 +72,12 @@ function Suma(a,b){
     console.log(`La suma de ${a} + ${b} es ${suma}`)
 }
 Suma(10,20)
+
+// Declaración de funciones con retorno
+function Suma2(a,b){
+    console.log('Entrando a la funcion de suma:')
+    let suma = a + b
+    return suma
+}
+let suma3 = Suma2(10,20)
+console.log(`La suma es ${suma3}`)
