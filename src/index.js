@@ -102,4 +102,12 @@ frutas3.forEach(function(elemento,indice,array){
     console.log(`El elemento es ${elemento}`)
     console.log(`El array es ${array}`)
     console.log(`El indice es ${indice}`)
+    console.log(indice, elemento)
+})
+
+// Agregar un elemento al final del array
+let frutas4=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+let nuevo = frutas4.push('Naranja')
+frutas4.forEach(function(elemento, indice){
+    console.log(indice, elemento)
 })
