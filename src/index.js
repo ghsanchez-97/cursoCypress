@@ -81,3 +81,25 @@ function Suma2(a,b){
 }
 let suma3 = Suma2(10,20)
 console.log(`La suma es ${suma3}`)
+
+// Declaración de arrays
+let frutas=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+console.log(frutas[0])
+console.log(frutas[3])
+
+// Arrays con medición
+let frutas2=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+console.log(`El número de elementos es ${frutas2.length}`)
+console.log(`Mostrar un elemento y es ${frutas2[2]}`)
+
+let dato={nom:'Guy',ape:'Sánchez',am:'Hernandez'}
+console.log(dato)
+console.log(dato.nom)
+
+// Obtener el objeto con forEach
+let frutas3=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+frutas3.forEach(function(elemento,indice,array){
+    console.log(`El elemento es ${elemento}`)
+    console.log(`El array es ${array}`)
+    console.log(`El indice es ${indice}`)
+})
