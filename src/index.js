@@ -108,6 +108,39 @@ frutas3.forEach(function(elemento,indice,array){
 // Agregar un elemento al final del array
 let frutas4=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
 let nuevo = frutas4.push('Naranja')
+let nuevo2 = frutas4.push('Durazno')
 frutas4.forEach(function(elemento, indice){
     console.log(indice, elemento)
 })
+
+//Eliminar el ultimo elemento del array
+let frutas5=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+let nuevo3 = frutas5.pop()
+console.log(frutas5)
+
+//  Agregar un elemento al inicio del array
+let frutas6=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+let nuevo4 = frutas6.unshift('Naranja')
+console.log(frutas6)
+
+// Eliminar el primer elemento del array
+let frutas7=['Manzana', 'Pera', 'Sandía', 'Zanahoria']
+let nuevo5 = frutas7.shift()
+console.log(frutas7)
+
+// Encontrar un elemento en una posicion 
+let axios = ['Carro', 'Moto', 'Bicicleta', 'Avión']
+let busqueda = axios.indexOf('Avión')
+console.log(busqueda)
+
+// Encontrar un elemento en una posicion
+let axios2 = ['Carro', 'Moto', 'Bicicleta', 'Avión']
+let busqueda2 = axios2.indexOf('Avión')
+let eliminarPos=axios2.splice(busqueda2,1)
+console.log(axios2)
+
+// Copiar un array a otro
+let axios3 = ['Carro', 'Moto', 'Bicicleta', 'Avión']
+let copia = axios3.slice()
+console.log('Original: ' ,axios3)
+console.log('La copia',copia)
