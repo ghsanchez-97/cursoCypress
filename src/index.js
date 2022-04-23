@@ -144,3 +144,11 @@ let axios3 = ['Carro', 'Moto', 'Bicicleta', 'Avión']
 let copia = axios3.slice()
 console.log('Original: ' ,axios3)
 console.log('La copia',copia)
+
+// CONDICIONALES
+let A = 10
+if(A == 10){
+    console.log('El valor de a es igual a 10')
+}else{
+    console.log('El valor de a es diferente a 10')
+}
