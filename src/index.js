@@ -152,3 +152,49 @@ if(A == 10){
 }else{
     console.log('El valor de a es diferente a 10')
 }
+
+//  Recorre en una funcion
+let edadd = 50
+
+const validAge = (e) => {
+   if( e <= 0 || e >= 100){
+       console.log('Fuera de rango')
+   }
+   else if(e > 0 && e <= 10){
+       console.log('Eres un niño')
+   }
+    else if(e > 10 && e <= 17){
+        console.log('Eres un adolescente')
+    }
+    else if ( e > 17 && e <= 30){
+        console.log('Eres un joven')
+    }
+    else{
+        console.log('Eres un adulto')
+    }
+}
+validAge(edadd)
+
+// Trabajando con Switch
+let futra = 'Motor'
+const costoFrutas = (fruta) => {
+    switch(fruta){
+        case 'Manzana':
+            console.log('El costo de la manzana es $2.00')
+            break
+        case 'Pera':
+            console.log('El costo de la pera es $1.50')
+            break
+        case 'Sandía':
+            console.log('El costo de la sandía es $3.00')
+            break
+        case 'Zanahoria':
+            console.log('El costo de la zanahoria es $1.00')
+            break
+        default:
+            console.log(`Escribio ${fruta} y no existe en la lista`)
+        break
+    }
+}
+
+costoFrutas(futra)
