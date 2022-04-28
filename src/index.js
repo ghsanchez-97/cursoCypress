@@ -198,3 +198,37 @@ const costoFrutas = (fruta) => {
 }
 
 costoFrutas(futra)
+
+// Ciclos con for 
+/* 
+    La buenas practicas de programación es que no se repita el código. 
+    Es buena practica iniciarlizar una variable en cero y luego ir incrementando o cambiando el valor de la variable.
+*/
+let x = 0
+for(x=1; x <= 20; x++){
+    console.log(`El valor de x es ${x}`)
+} 
+// Realizar sumatoria 
+let aa = 0
+let bb = 0
+let cc = 0
+// let xx = 0
+// let num = parseInt(prompt('Ingrese un número que desea repetir'))
+let num = 5
+
+for(xx=1; xx <= num; xx++){
+    let a = 2
+    let b = 3
+    c = a + b
+    console.log(`El valor de c es ${c}`)
+}
+
+// Table de multiplicar
+// let numero = parseInt(prompt('Ingrese un número'))
+let numero = 5
+let range = 20
+let xx = 0
+for(xx = 1; xx <= range; xx++){
+    let resultado = numero * xx
+    console.log(`${numero} x ${xx} = ${resultado}`)
+}
