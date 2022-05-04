@@ -232,3 +232,34 @@ for(xx = 1; xx <= range; xx++){
     let resultado = numero * xx
     console.log(`${numero} x ${xx} = ${resultado}`)
 }
+
+// Arreglos con for
+let arreglo = [1,2,3,4,5,6,7,8,9,10]
+let x1 = 0
+for(x1 = 0; x1 < arreglo.length; x1++){
+    console.log(`El valor de x1 es ${arreglo[x1]}`)
+}
+
+// Arreglos con for in
+let arreglo2 = {a:1, b:2, c:3, d:4, e:5, f:6, g:7, h:8, i:9, j:10, nom: 'Guy'}
+for(let x2 in arreglo2){
+    console.log(`El ciclo for IN ${x2}: ${arreglo2[x2]}`)
+}
+
+// arreglos con for Each
+let arreglo3 = [1,2,3,4,5,6,7,8,9,10]
+arreglo3.forEach(function(elemento, indice, array){
+    console.log(`El valor de x1 es ${elemento} y el indice es ${indice}, ${array}`)
+})
+
+//  Try Catch
+const sumar = () => {
+    return 10 + 10
+}
+console.log('Inicio')
+try{
+    sumar()
+}catch(error){
+    console.log('Error', error)
+}
+console.log('Fin')
