@@ -263,3 +263,32 @@ try{
     console.log('Error', error)
 }
 console.log('Fin')
+
+// Funciones de flecha
+const Saludar = () => {
+    console.log('Bienvenidos a las funciones de tipo flecha')
+}
+Saludar()
+
+// async
+let X = 10
+console.log('##### 1. Primer proceso #####')
+setTimeout(() => {
+    X=X*3+2
+    console.log('### 2. Segundo proceso #####', X)
+})
+console.log('##### 3. Tercer proceso #####', X)
+
+// Promesas
+let XX = 10
+console.log('##### 1. Primer proceso #####')
+let promesa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        XX=XX*3+2
+        console.log('### 2. Segundo proceso #####')
+        resolve(XX)
+    })
+}, 3000)
+promesa.then(res => {
+    console.log('##### 3. Tercer proceso #####', res)
+})
