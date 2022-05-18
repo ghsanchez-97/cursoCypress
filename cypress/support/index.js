@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+require('cypress-plugin-tab')
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
@@ -23,3 +24,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     // failing the test
     return false
   })
+Cypress.Commands.add('demoqa', () => {
+  cy.visit('https://demoqa.com/text-box')
+  cy.wait(3500)
+})
+Cypress.Commands.add('demoqaForm', () => {
+  cy.visit('https://demoqa.com/automation-practice-form')
+  cy.wait(3500)
+})
