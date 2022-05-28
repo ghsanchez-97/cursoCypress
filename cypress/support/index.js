@@ -32,3 +32,11 @@ Cypress.Commands.add('demoqaForm', () => {
   cy.visit('https://demoqa.com/automation-practice-form')
   cy.wait(3500)
 })
+Cypress.Commands.add('orangehrm', () => {
+  cy.visit('https://opensource-demo.orangehrmlive.com/')
+  cy.wait(3500)
+})
+Cypress.Commands.add('demoqaWebTables', () => {
+  cy.visit('https://demoqa.com/webtables')
+  cy.wait(3500)
+})
