@@ -1,2 +1,4 @@
 # Comentarionado node_moduless
 /node_modules
+# Comentarionado package_lock.json
+/package-lock.json
