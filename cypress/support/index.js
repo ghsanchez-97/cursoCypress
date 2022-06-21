@@ -15,6 +15,7 @@
 
 // Import commands.js using ES2015 syntax:
 import './commands'
+/// <reference types="Cypress" />
 require('cypress-plugin-tab')
 require('cypress-xpath')
 
@@ -39,5 +40,21 @@ Cypress.Commands.add('orangehrm', () => {
 })
 Cypress.Commands.add('demoqaWebTables', () => {
   cy.visit('https://demoqa.com/webtables')
+  cy.wait(3500)
+})
+Cypress.Commands.add('computerDataBase', () => {
+  cy.visit('http://computer-database.gatling.io/computers')
+  cy.wait(3500)
+})
+Cypress.Commands.add('seleniumeasy', () => {
+  cy.visit('https://demo.seleniumeasy.com/basic-checkbox-demo.html')
+  cy.wait(3500)
+})
+Cypress.Commands.add('seleniumEasyRadio', () => {
+  cy.visit('https://demo.seleniumeasy.com/basic-radiobutton-demo.html')
+  cy.wait(3500)
+})
+Cypress.Commands.add('seleniumEasySelect', () => {
+  cy.visit('https://demo.seleniumeasy.com/basic-select-dropdown-demo.html')
   cy.wait(3500)
 })
