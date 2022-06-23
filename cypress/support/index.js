@@ -58,3 +58,7 @@ Cypress.Commands.add('seleniumEasySelect', () => {
   cy.visit('https://demo.seleniumeasy.com/basic-select-dropdown-demo.html')
   cy.wait(3500)
 })
+Cypress.Commands.add('seleniumEasyListBox', () => {
+  cy.visit('https://demo.seleniumeasy.com/jquery-dual-list-box-demo.html')
+  cy.wait(3500)
+})
