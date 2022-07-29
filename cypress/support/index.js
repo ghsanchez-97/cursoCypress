@@ -66,3 +66,11 @@ Cypress.Commands.add('automaticeprac', () => {
   cy.visit('http://automationpractice.com/index.php')
   cy.wait(3500)
 })
+Cypress.Commands.add('seleniumEasyTable', () => {
+  cy.visit('https://demo.seleniumeasy.com/table-pagination-demo.html')
+  cy.wait(3500)
+})
+Cypress.Commands.add('seleniumEasyText', () => {
+  cy.visit('https://demo.seleniumeasy.com/basic-first-form-demo.html')
+  cy.wait(3500)
+})
